@@ -4,10 +4,16 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview",
-    "tauri": "tauri"
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "build:verbose": "tauri build --verbose",
+    "tauri": "tauri",
+    "ui:dev": "vite",
+    "ui:build": "tsc && vite build",
+    "ui:preview": "vite preview",
+    "check": "node scripts/check.mjs",
+    "updater": "node scripts/updater.mjs",
+    "updater-fixed-webview2": "node scripts/updater-fixed-webview2.mjs"
   },
   "dependencies": {
     "vue": "^3.5.13",

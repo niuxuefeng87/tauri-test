@@ -3,12 +3,12 @@
   "productName": "tauri-test",
   "version": "0.1.0",
   "identifier": "com.tauri-test.app",
-  "build": {
-    "beforeDevCommand": "pnpm dev",
-    "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "pnpm build",
-    "frontendDist": "../dist"
-  },
+	"build": {
+		"beforeDevCommand": "pnpm ui:dev",
+		"devUrl": "http://localhost:1420",
+		"beforeBuildCommand": "pnpm ui:build",
+		"frontendDist": "../dist"
+	},
   "app": {
     "windows": [
       {
