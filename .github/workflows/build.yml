@@ -99,8 +99,10 @@ jobs:
           run_install: false
           version: 9
 
-      - name: install frontend dependencies
-        run: pnpm install # change this to npm, pnpm or bun depending on which one you use.
+      - name: Pnpm install and check
+        run: |
+          pnpm i
+          pnpm check ${{ matrix.target }}
 
       - name: "Setup for linux"
         run: |-
