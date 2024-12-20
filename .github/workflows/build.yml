@@ -102,7 +102,6 @@ jobs:
       - name: Pnpm install and check
         run: |
           pnpm i
-          pnpm check ${{ matrix.target }}
 
       - name: "Setup for linux"
         run: |-
